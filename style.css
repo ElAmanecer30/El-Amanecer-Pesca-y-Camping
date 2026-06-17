@@ -507,3 +507,20 @@ footer {
 .product-card.cana-nueva .price {
   color: #ffbd24;
 }
+
+
+/* v10 galerías de cañas */
+.product-card.cana-galeria .gallery-box{background:linear-gradient(145deg,#071523,#102f47)}
+.product-card.cana-galeria .gallery-main{width:100%;border:0;padding:0;background:transparent;cursor:zoom-in;display:block}
+.product-card.cana-galeria .gallery-main img{width:100%;height:360px;object-fit:cover;object-position:center;display:block}
+.thumb-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px;background:rgba(0,0,0,.22)}
+.thumb-btn{border:1px solid rgba(243,181,43,.35);background:#071523;border-radius:8px;overflow:hidden;padding:0;cursor:pointer;height:58px}
+.thumb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.image-modal{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.image-modal.open{display:flex}
+.image-modal img{max-width:min(94vw,1050px);max-height:88vh;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.modal-close,.modal-nav{position:fixed;border:0;background:rgba(243,181,43,.95);color:#09131d;font-weight:900;cursor:pointer}
+.modal-close{top:18px;right:20px;width:46px;height:46px;border-radius:50%;font-size:32px}
+.modal-nav{top:50%;transform:translateY(-50%);width:46px;height:70px;border-radius:14px;font-size:42px}
+.modal-prev{left:20px}.modal-next{right:20px}
+@media(max-width:620px){.product-card.cana-galeria .gallery-main img{height:330px}.thumb-btn{height:52px}}
